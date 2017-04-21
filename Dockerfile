@@ -1,5 +1,4 @@
 FROM airdock/oracle-jdk:jdk-1.8
 
-RUN apt-get -y update && \
-    apt-get -y upgrade && \
-    apt-get install maven
+RUN apt-get update -qq && \
+    apt-get install -y
